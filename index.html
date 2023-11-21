@@ -4,116 +4,557 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/utils.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <title>iBlog - Heavens For Bloggers</title>
+    <title>Aaryan-Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Playpen+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url('https://th.bing.com/th/id/R.91d9cfa41f20c97ac6c6afb42a4bcae4?rik=k%2bd60cKDyoBVAg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f8%2f8%2fc%2f1354047-web-wallpaper-1920x1080-laptop.jpg&ehk=rks0SPaP4SbB1w%2fkOxHMAhIjgBkEFesfq9GW8Bg3bbI%3d&risl=&pid=ImgRaw&r=0');
+            margin: auto;
+            height: 100%;
+            width: 100%;
+            background-size: 100%;
+            color: aliceblue;
+            font-family: Playpen Sans;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 23px;
+            height: auto;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: 23px;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: wheat;
+        }
+
+        nav ul li a:hover {
+            color: aquamarine;
+        }
+
+        nav ul button {
+            color: #32bcbc;
+            background-color: initial;
+            border-radius: 100px;
+            border-block-color: #32bcbc;
+            border-block-end-style: inherit;
+        }
+
+        nav img {
+            height: auto;
+            width: auto;
+            margin-left: -80px;
+        }
+
+        .left {
+            font-size: 2rem;
+            font-family: Agbalumo;
+            color: aqua;
+        }
+
+        .container {
+            margin: 1px 20px;
+            padding: 2px 33px;
+            --flex-direction: initial;
+            --flex-wrap: initial;
+            --justify-content: initial;
+            --align-items: initial;
+            --align-content: initial;
+            --gap: initial;
+            --flex-basis: initial;
+            --flex-grow: initial;
+            --flex-shrink: initial;
+            --order: initial;
+            --align-self: initial;
+            -ms-flex-preferred-size: var(--flex-basis);
+            flex-basis: var(--flex-basis);
+            -webkit-box-flex: var(--flex-grow);
+            -ms-flex-positive: var(--flex-grow);
+            flex-grow: var(--flex-grow);
+            -ms-flex-negative: var(--flex-shrink);
+            flex-shrink: var(--flex-shrink);
+            -webkit-box-ordinal-group: var(--order);
+            -ms-flex-order: var(--order);
+            order: var(--order);
+            -ms-flex-item-align: var(--align-self);
+            align-self: var(--align-self);
+        }
+
+        .container-left {
+            margin-right: 47%;
+            font-size: medium;
+        }
+
+        div h1 {
+            color: chocolate;
+        }
+
+        div h2 {
+            color: white
+        }
+
+        .container-right {
+            margin-right: 47%;
+            font-size: medium;
+        }
+
+        .heading-name {
+            font-size: xx-large;
+        }
+
+        div h3 {
+            color: grey;
+        }
+
+        .green {
+            color: greenyellow;
+        }
+
+        p {
+            font-size: x-small;
+            color: #b3dbf5;
+        }
+
+        .about {
+            display: flex;
+            --flex-direction: initial;
+            --flex-wrap: initial;
+            --justify-content: initial;
+            --align-items: initial;
+            --align-content: initial;
+            --gap: initial;
+            --flex-basis: initial;
+            --flex-grow: initial;
+            --flex-shrink: initial;
+            --order: initial;
+            --align-self: initial;
+            -ms-flex-preferred-size: var(--flex-basis);
+            flex-basis: var(--flex-basis);
+            -webkit-box-flex: var(--flex-grow);
+            -ms-flex-positive: var(--flex-grow);
+            flex-grow: var(--flex-grow);
+            -ms-flex-negative: var(--flex-shrink);
+            flex-shrink: var(--flex-shrink);
+            -webkit-box-ordinal-group: var(--order);
+            -ms-flex-order: var(--order);
+            order: var(--order);
+            -ms-flex-item-align: var(--align-self);
+            align-self: var(--align-self);
+        }
+
+        .me {
+            display: flex;
+            --flex-direction: initial;
+            --flex-wrap: initial;
+            --justify-content: initial;
+            --align-items: initial;
+            --align-content: initial;
+            --gap: initial;
+            --flex-basis: initial;
+            --flex-grow: initial;
+            --flex-shrink: initial;
+            --order: initial;
+            --align-self: initial;
+            -ms-flex-preferred-size: var(--flex-basis);
+            flex-basis: var(--flex-basis);
+            -webkit-box-flex: var(--flex-grow);
+            -ms-flex-positive: var(--flex-grow);
+            flex-grow: var(--flex-grow);
+            -ms-flex-negative: var(--flex-shrink);
+            flex-shrink: var(--flex-shrink);
+            -webkit-box-ordinal-group: var(--order);
+            -ms-flex-order: var(--order);
+            order: var(--order);
+            -ms-flex-item-align: var(--align-self);
+            align-self: var(--align-self);
+        }
+
+        .main-container {
+            --flex-direction: row;
+            --container-widget-width: initial;
+            --container-widget-height: 100%;
+            --container-widget-flex-grow: 1;
+            --justify-content: space-between;
+            --gap: 90px;
+            padding-top: 500px;
+            padding-bottom: 130px;
+            --widgets-spacing: 20px;
+        }
+
+        .widget {
+            display: flex;
+            --wp--custom--ast-default-block-top-padding: 3em;
+            --wp--custom--ast-default-block-right-padding: 3em;
+            --wp--custom--ast-default-block-bottom-padding: 3em;
+            --wp--custom--ast-default-block-left-padding: 3em;
+            --wp--custom--ast-container-width: 1200px;
+            --wp--custom--ast-content-width-size: 1200px;
+            --wp--custom--ast-wide-width-size: calc(1200px + var(--wp--custom--ast-default-block-left-padding) + var(--wp--custom--ast-default-block-right-padding));
+        }
+
+        .widget-box {
+            text-align: center;
+            justify-content: space-between;
+            padding: -1px 431px;
+            height: 100%;
+        }
+
+        .space {
+            max-width: fit-content;
+            padding: 13px;
+        }
+
+        .alpha {
+            text-align: center;
+            height: 100px;
+        }
+
+        .about-prg {
+
+            justify-items: center;
+            padding: 1.8rem 0rem;
+        }
+
+        .about-prg-p {
+            display: flex;
+            font-size: medium;
+            justify-items: center;
+            padding: 0px 60px;
+        }
+
+        .logo-1 {
+            height: 410px;
+            width: auto;
+
+        }
+
+        .about-prg-1 {
+            font-size: xx-large;
+            padding: 281px;
+        }
+
+        .about-prg-2 {
+            font-size: large;
+        }
+
+        .portfolio {
+            display: flex;
+        }
+
+        .portfolio-1 {
+            justify-items: center;
+            padding: 402px;
+            font-size: medium;
+            color: wheat;
+        }
+
+        .portfolio-2 {
+            justify-items: center;
+            padding: 2px;
+            display: block;
+            font-size: xx-large;
+            color: aquamarine;
+        }
+
+        .portfolio-3 {
+            justify-items: center;
+            padding: 12px;
+            font-size: x-small;
+            color: gray;
+            display: block;
+        }
+
+        .gallery-control {
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: 1 1 auto;
+            flex-flow: 1 1 auto;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .service-span {
+            padding: 6px 0px;
+        }
+
+        .widget-texture {
+
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 2.8rem;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navigation max-width-1 m-auto">
-        <div class="nav-left">
-            <span>iBolg</span>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/blog.html">About</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
+    <header>
+        <nav>
+            <div class="left">
+                <img class="logo" src="img1.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <button type="button">
+                        <li><a href="/">Home</a></li>
+                    </button>
+                    <button type="button">
+                        <li><a href="#about">About</a></li>
+                    </button>
+                    <button type="button">
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </button>
+                    <button type="button">
+                        <li><a href="#service">Service</a></li>
+                    </button>
+                    <button type="button">
+                        <li><a href="#contact">Contact</a></li>
+                    </button>
+                    <button type="button">
+                        <li><a href="https://novoresume.com/resume-templates">Download CV</a></li>
+                    </button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="container-left">
+            <div>
+                <h1>
+                    Hello,I'm
+                </h1>
+            </div>
         </div>
-        <div class="nav-right">
-            <form action="/search.html" methord="get">
-                <input class="form-input" type="text" name="query" placeholder="Article Search">
-                <button class="btn">Search</button>
-            </form>
+        <div class="heading-name container-left">
+            <div>
+                <h2>Aaryan Gautam</h2>
+            </div>
         </div>
-    </nav>
-    <div class="max-width-1 m-auto " style="padding: 20px;">
-        <hr>
-    <div class="content max-width-1 m-auto">
-        <div class="content-left">
-            <h1>The heaven for Bloggers</h1>
-            <p>iBolg is a website which let you submit an article which upon approval will be uploaded on our website
-                and you can get good amount of reach from here!</p>
-            <p>For all of our custom programs, participating influencers authenticate onto our platform giving us access
-                to the reach, insights and engagement data of their audience. This information allows us to target
-                in-demo audiences most likely to engage with your custom content. By optimizing data and building new
-                retargetable audiences, we deliver high-impact results.</p>
+        <div class="container-left">
+            <div>
+                <div>
+                    <h3>
+                        <span>A Creative Designer From</span>
+                        <span class="green">Rajasthan</span>
+                    </h3>
+                    <span class="subtext"></span>
+                </div>
+            </div>
         </div>
-        <div class="content-right">
-            <img src="https://www.lbtc.co.uk/wp-content/uploads/2020/01/Benefits-of-Studying-Computer-Information-Systems-Courses-with-LBTC.jpg" style="height: 175px;" alt="article">
+        <div class="container-left">
+            <div>
+                <style>
+
+                </style>
+                <p>
+                    I’m creative designer based in India, and I’m very passionate and dedicated to my work.
+                </p>
+            </div>
         </div>
+        <div class="about container-left">
+            <div class="my">
+                <div>
+                    <div>
+                        <div>
+                            <a href="/" class="elimentor-button" role="button">
+                                <span>
+                                    <span>About Me</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <style></style>
+                        <div>
+                            <span class="elementor-grid-item">
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <span>Facebook-f</span>
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-right">photo</div>
     </div>
-    <div class="max-width-1 m-auto " style="padding: 2px;">
-        <hr>
-    </div>
-    <div class="home-articles max-width-1 m-auto font2">
-        <h2>Feature Article</h2>
-        <div class="home-article">
-            <div class="home-article-img">
-                <img src="https://lethbridgecollege.ca/sites/default/files/styles/max_1300x1300/public/2017-10/hero-cit.jpg?itok=5l7DTeuJ" style="height: 175px;" alt="article">
-            </div>
-            <div class="home-article-content font1">
-                <a href="/blogpost.html"><h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3></a>
-                
-                <div>Author Name</div>
-                <span>7 January | 6 min read</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sint voluptatum magni aperiam enim,
-                    sit id dolorem explicabo perspiciatis possimus, delectus qui itaque?</p>
-            </div>
-        </div>
-        <div class="home-article">
-            <div class="home-article-img">
-                <img src="https://www.lbtc.co.uk/wp-content/uploads/2020/01/Benefits-of-Studying-Computer-Information-Systems-Courses-with-LBTC.jpg" style="height: 175px;" alt="article">
-            </div>
-            <div class="home-article-content font1">
-                <a href="/blogpost.html"><h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3></a>
-                <div>Author Name</div>
-                <span>7 January | 6 min read</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sint voluptatum magni aperiam enim,
-                    sit id dolorem explicabo perspiciatis possimus, delectus qui itaque?</p>
-            </div>
-        </div>
-        <div class="home-article">
-            <div class="home-article-img">
-                <img src="https://www.ft.unicamp.br/sites/default/files/computing.jpg" style="height: 145px;" alt="article">
-            </div>
-            <div class="home-article-content font1">
-                <a href="/blogpost.html"><h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3></a>
-                <div>Author Name</div>
-                <span>7 January | 6 min read</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sint voluptatum magni aperiam enim,
-                    sit id dolorem explicabo perspiciatis possimus, delectus qui itaque?</p>
+    <main class="alpha" id="about" data-setting="{&quot;content_width&quot;:&quot;boxed&quot;}">
+        <div class="main-container">
+            <a href="/" style="color: aqua;display: block;text-align: center;font-size: xx-large;text-decoration: none;">About</a>
+            <div class="widget">
+                <div class="widget-box">
+                    <p><img decoding="async" loading="lazy" width="140" height="140"
+                            src="https://elementor.jimfahad.com/elementor150/wp-content/uploads/2022/07/pixel-perfect-1.png"
+                            class="attachment-full size-full" alt=""></p>
+                    <span class="space" type="text">Pixcel Perfect</span>
+                    <p>Most common methods for designing websites that work well on desktop is responsive and adaptive
+                        design.</p>
+                </div>
+                <div class="widget-box">
+                    <p><img decoding="async" loading="lazy" width="140" height="140"
+                            src="https://elementor.jimfahad.com/elementor150/wp-content/uploads/2022/07/hight-quality-1.png"
+                            class="attachment-full size-full" alt=""></p>
+                    <span class="space" type="text">High Quality</span>
+                    <p>Most common methods for designing websites that work well on desktop is responsive and adaptive
+                        design.</p>
+                </div>
+                <div class="widget-box">
+                    <p><img decoding="async" loading="lazy" width="140" height="140"
+                            src="https://elementor.jimfahad.com/elementor150/wp-content/uploads/2022/07/awesome-data-1.png"
+                            class="attachment-full size-full" alt=""></p>
+                    <span class="space" type="text">Awesome Ideas</span>
+                    <p>Most common methods for designing websites that work well on desktop is responsive and adaptive
+                        design.</p>
+                </div>
             </div>
         </div>
-        <div class="home-article">
-            <div class="home-article-img">
-                <img src="https://www.skagit.edu/wp-content/uploads/2019/03/bnr_computer_info-systems_mob_800x450.jpg" style="height: 145px;" alt="article">
-            </div>
-            <div class="home-article-content font1">
-                <a href="/blogpost.html"><h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3></a>
-                <div>Author Name</div>
-                <span>7 January | 6 min read</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sint voluptatum magni aperiam enim,
-                    sit id dolorem explicabo perspiciatis possimus, delectus qui itaque?</p>
-            </div>
-        </div>
-        <div class="home-article">
-            <div class="home-article-img">
-                <img src="https://www.friends.edu/wp-content/uploads/2015/08/CIS.jpg" style="height: 160px;" alt="article">
-            </div>
-            <div class="home-article-content font1">
-                <a href="/blogpost.html"><h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3></a>
-                <div>Author Name</div>
-                <span>7 January | 6 min read</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sint voluptatum magni aperiam enim,
-                    sit id dolorem explicabo perspiciatis possimus, delectus qui itaque?</p>
+        <footer>Copyright &copy; AaryanGautam Digitals.com | All rights reserved</footer>
+        <div>
+            <div>
+                <div>
+                    <div class="about-prg">
+                        <img class="logo-1"
+                            src="https://elementor.jimfahad.com/elementor150/wp-content/uploads/2022/07/about-1-1.jpg"
+                            alt="">
+                        <span class="about-prg-p" style="padding-left: 550px;color: orange;">I'm a Designer</span>
+                        <span class="about-prg-1">I Can Design Anything You Want</span>
+                        <span class="about-prg-2" style="color: gray;">Hello there! I’m a web designer, and I’m very
+                            passionate and dedicated
+                            to my work. With 20 years experience as a professional web developer, I have acquired the
+                            skills and knowledge necessary to make your project a success. I enjoy every step of the
+                            design process, from discussion and collaboration.</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="footer max-width-2 m-auto">
-        <p>Copyright &copy; iBlog.com</p>
-        <a href="https://www.vecteezy.com/free-vector/typing">Vector Credits :Vecteezy</a>
-    </div>
+        <footer>Copyright &copy; AaryanGautam Digitals.com | All rights reserved</footer>
+        <div id="portfolio" class="" data-setting="{&quot;content_width&quot;:&quot;boxed&quot;}"
+            style="padding: 78px;">
+            <div>
+                <span class="portfolio-1">Portfolio</span>
+                <span class="portfolio-2">My Amazing Work</span>
+                <span class="portfolio-3">Most common methods for designing websites that work well on desktop is
+                    responsive and adaptive design</span>
+            </div>
+            <div class="gallery-control" style="display: flex;">
+                <ul style="overflow: hidden;">
+                    <li style="display: inline-block;color: orange;" data-load-more-status="0" data-first-init="1" class="control all-control active"
+                        data-filter="*">All</li>
+                    <li style="display: inline-block;" data-load-more-status="0" data-first-init="1" data-filter=".eael-cf">Design</li>
+                    <li style="display: inline-block;" data-load-more-status="0" data-first-init="1" data-filter=".eael-cf">Branding</li>
+                </ul>
+            </div>
+        </div>
+        <footer style="padding: 197px;">Copyright &copy; AaryanGautam Digitals.com | All rights reserved</footer>
+        <div style="width: 300px;margin: auto;" class="elementor-element elementor-element-35d0d555 e-con-full e-con"
+            data-id="35d0d555" data-element_type="container"
+            data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+            <div class="elementor-element elementor-element-4a1b0efd elementor-widget elementor-widget-image"
+                data-id="4a1b0efd" data-element_type="widget" data-widget_type="image.default">
+                <div class="elementor-widget-container">
+                    <img decoding="async" loading="lazy" width="2000" height="1852"
+                        src="https://elementor.jimfahad.com/elementor150/wp-content/uploads/2022/07/computer-1.jpg"
+                        class="attachment-full size-full" alt=""
+                        srcset="https://elementor.jimfahad.com/elementor150/wp-content/uploads/2022/07/computer-1.jpg 2000w, https://elementor.jimfahad.com/elementor150/wp-content/uploads/2022/07/computer-1-300x278.jpg 300w, https://elementor.jimfahad.com/elementor150/wp-content/uploads/2022/07/computer-1-1024x948.jpg 1024w, https://elementor.jimfahad.com/elementor150/wp-content/uploads/2022/07/computer-1-768x711.jpg 768w, https://elementor.jimfahad.com/elementor150/wp-content/uploads/2022/07/computer-1-1536x1422.jpg 1536w"
+                        sizes="(max-width: 2000px) 100vw, 2000px" style="padding: 0;height: 200px;width: auto;">
+                </div>
+            </div>
+        </div>
+        <div id="service" class="Service-span" style="padding: 0px 20px;">
+            <div>
+                <span class="portfolio-1" style="padding: 336px;">Design is Life</span>
+                <li class="portfolio-2">I Develop Skills Regularly to Keep Me Updated</li>
+                <li class="portfolio-3">Most common methods for designing websites that work well on desktop is
+                    responsive and adaptive design</li>
+            </div>
+            <div style="display: flex;">
+                <div style="width: 300px;">
+                    <div>
+                        <div>
+                            <div class="widget-texture" style="-webkit-margin-top-collapse: collapse;">Illustrator</div>
+                            <div class="eael-progressbar eael-progressbar-line" data-layout="line" data-count="83"
+                                data-duration="1500">
+                                <span class="eael-progressbar-count-wrap"><span
+                                        class="eael-progressbar-count">83</span><span class="postfix">%</span></span>
+                                <span class="eael-progressbar-line-fill"
+                                    style="transition-duration: 1500ms; width: 83%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 300px;"
+                    class="elementor-element elementor-element-76d1b5cc progress-bar elementor-widget elementor-widget-eael-progress-bar"
+                    data-id="76d1b5cc" data-element_type="widget" data-widget_type="eael-progress-bar.default">
+                    <div class="elementor-widget-container">
+                        <div class="eael-progressbar-line-container center">
+                            <div class="eael-progressbar-title">Photoshop</div>
+
+                            <div class="eael-progressbar eael-progressbar-line" data-layout="line" data-count="96"
+                                data-duration="1500">
+                                <span class="eael-progressbar-count-wrap"><span
+                                        class="eael-progressbar-count">96</span><span class="postfix">%</span></span>
+                                <span class="eael-progressbar-line-fill"
+                                    style="transition-duration: 1500ms; width: 96%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 300px;"
+                    class="elementor-element elementor-element-20b8e59 progress-bar elementor-widget elementor-widget-eael-progress-bar"
+                    data-id="20b8e59" data-element_type="widget" data-widget_type="eael-progress-bar.default">
+                    <div class="elementor-widget-container">
+                        <div class="eael-progressbar-line-container center">
+                            <div class="eael-progressbar-title">Figma</div>
+
+                            <div class="eael-progressbar eael-progressbar-line" data-layout="line" data-count="77"
+                                data-duration="1500">
+                                <span class="eael-progressbar-count-wrap"><span
+                                        class="eael-progressbar-count">77</span><span class="postfix">%</span></span>
+                                <span class="eael-progressbar-line-fill"
+                                    style="transition-duration: 1500ms; width: 77%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer style="padding: 150px;">Copyright &copy; AaryanGautam Digitals.com | All rights reserved</footer>
+    </main>
+    <footer id="contact">Copyright &copy; AaryanGautam Digitals.com | All rights reserved</footer>
 </body>
 
 </html>
